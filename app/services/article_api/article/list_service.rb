@@ -2,7 +2,7 @@
 
 require 'proto/article_pb'
 
-class ArticleApi::ListService < ArticleApi
+class ArticleApi::Article::ListService < ArticleApi::Article
   def call
     req = Proto::Article::ListRequest.new
     @service.list(req)
