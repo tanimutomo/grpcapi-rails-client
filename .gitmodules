@@ -1,0 +1,3 @@
+[submodule "grpcs/grpcapi-go-server"]
+	path = grpcs/grpcapi-go-server
+	url = https://github.com/tanimutomo/grpcapi-proto.git
