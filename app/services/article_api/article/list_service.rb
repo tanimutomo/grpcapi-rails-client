@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require 'proto/article_pb'
+require 'grpcs/grpcapi-go-server/article_pb'
 
 class ArticleApi::Article::ListService < ArticleApi::Article
   def call
-    req = Proto::Article::ListRequest.new
-    @service.list(req)
+    req = Grpcs::GrpcapiGoServer::Article::ListArticlesRequest.new
+    @service.list_articles(req)
   end
 end
